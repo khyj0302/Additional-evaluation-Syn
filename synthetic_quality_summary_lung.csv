@@ -1,0 +1,4 @@
+Synthetic_File,Shape,Pair_Trend,Overall
+synthetic_lung_TTGAN_LGBM.csv,0.8957,0.7695,0.8326
+synthetic_lung_CopulaGAN.csv,0.8341,0.7042,0.7691
+synthetic_lung_CTGAN.csv,0.9344,0.8241,0.8793

@@ -1,0 +1,4 @@
+Synthetic_File,Shape,Pair_Trend,Overall
+synthetic_liver_CTGAN.csv,0.8619,0.6876,0.7747
+synthetic_liver_CopulaGAN.csv,0.7945,0.6013,0.6979
+synthetic_liver_TTGAN_LGBM.csv,0.8091,0.6811,0.7451
