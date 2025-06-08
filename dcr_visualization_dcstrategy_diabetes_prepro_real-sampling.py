@@ -65,16 +65,14 @@ for file in tqdm(os.listdir(synthetic_folder)):
         risky_count = np.sum(syn_min_distances < real_mean_min_distance)
         print(f"{file}: {risky_count} risky records (below threshold)")
 
-        # === 시각화 ===
+        # === 시각화 (기준선 없음) ===
         plt.figure(figsize=(8, 5))
         plt.hist(syn_min_distances, bins=30, color='skyblue', edgecolor='black')
-        plt.axvline(real_mean_min_distance, color='red', linestyle='--', label=f'Mean real min distance (샘플 {REAL_SAMPLE_SIZE}개)')
         plt.title(f'Min Distance Distribution: {file}')
         plt.xlabel('Min Distance')
         plt.ylabel('Frequency')
-        plt.legend()
         plt.tight_layout()
-        output_png = f"min_distance_distribution_{file.replace('.csv', '')}.png"
+        output_png = f"min_distance_distribution_nobase_{file.replace('.csv', '')}.png"
         plt.savefig(output_png)
         plt.close()
         print(f"히스토그램 저장 완료: {output_png}")
